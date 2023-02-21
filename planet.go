@@ -69,5 +69,4 @@ func Random() Planet {
 		Vector2{x, y},
 		Vector2{vel_x, vel_y},
 		mass, color}
-
 }
