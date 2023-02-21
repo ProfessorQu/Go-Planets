@@ -7,7 +7,9 @@ type Vector2 struct {
 }
 
 func (self Vector2) Distance(other Vector2) float64 {
-	return math.Sqrt(math.Pow(self.X-other.X, 2) + math.Pow(self.Y-other.Y, 2))
+	diff_x := self.X - other.X
+	diff_y := self.Y - other.Y
+	return math.Sqrt(diff_x*diff_x + diff_y*diff_y)
 }
 
 func (self Vector2) Magnitude() float64 {
